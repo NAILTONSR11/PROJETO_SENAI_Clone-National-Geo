@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Geopraphic</title>
     <link rel="stylesheet" href="src/styles/style.css">
+    <script type="module" src="src/script/script.js" defer></script>
 </head>
 <body>
     <div class="grid-container">
@@ -28,7 +29,7 @@
         <!-- Início Primeira sessão-->
         <section class="section-one grid-section" id="animais">
             <h1 class="titulos">national geographic</h1>
-            <ul class="animais-list">
+            <ul class="animais-list" data-tab="animais">
                 <li><img src="src/assets/images/raposa.jpg" alt="Imagem de um Raposa"></li>
                 <li><img src="src/assets/images/esquilo.jpg" alt="Imagem de um Esquilo"></li>
                 <li><img src="src/assets/images/urso.jpg" alt="Imagem de um Urso"></li>
@@ -37,8 +38,8 @@
                 <li><img src="src/assets/images/leão.jpg" alt="Imagem de um Leão"></li>
             </ul>
 
-            <div class="animais-description">
-                <section>
+            <div class="animais-description" data-tab="description">
+                <section data-anima="anima-right">
                     <h2>Raposa</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -51,7 +52,7 @@
 
                     </p>
                 </section>
-                <section>
+                <section data-anima="anima-right">
                     <h2>Esquilo</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -64,7 +65,7 @@
 
                     </p>
                 </section>
-                <section>
+                <section data-anima="anima-right">
                     <h2>Urso</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -76,7 +77,8 @@
 
                     </p>
                 </section>
-                <section>
+
+                <section  data-anima="anima-right">
                     <h2>Lobo</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -85,7 +87,7 @@
 
                     </p>
                 </section>
-                <section>
+                <section data-anima="anima-right">
                     <h2>Babuíno</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -96,7 +98,7 @@
                         Doloremque omnis tempore voluptate minus quos.
                     </p>
                 </section>
-                <section>
+                <section data-anima="anima-right">
                     <h2>Leão</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
