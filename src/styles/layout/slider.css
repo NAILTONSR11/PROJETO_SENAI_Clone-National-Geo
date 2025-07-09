@@ -11,6 +11,7 @@
     border: none;
     cursor: pointer;
     color: var(--cor3);
+    user-select: none; /*É usada para impedir que o usuário selecione texto ou outros elementos da página*/
 }
 
 .slider {
