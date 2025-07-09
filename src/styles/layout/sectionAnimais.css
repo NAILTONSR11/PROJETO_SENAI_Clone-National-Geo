@@ -13,6 +13,7 @@
 
 .animais-description {
     grid-column: 3;
+    padding-right: 15px;
 }
 
 .animais-description section {
