@@ -8,4 +8,5 @@ export default function initMenuMobile() {
         ulList.classList.toggle('ativo');
         buttonMobile.classList.toggle('ativo');
     }
+    
 }
