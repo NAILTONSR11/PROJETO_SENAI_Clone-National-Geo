@@ -1,0 +1,59 @@
+.ModalLogin{
+    position: absolute;
+    border: 1px solid black;
+    display: grid;
+    height: 260px;
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    justify-self: center;
+    margin-top: 100px;
+
+    & h2{
+        color: var(--cor4);
+        margin-left: 40px;
+    }
+
+    & img{
+        position: relative;
+        justify-self: end;
+        bottom: 15px;
+        left: 15px;
+        background-color: white;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+.FormodalLogin{
+    display: grid;
+    height: 15vh;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 15px;
+
+    & label{
+        margin-left: 32px;
+        color: var(--cor4);
+        font-weight: bold;
+    }
+    & input{
+        width: 80%;
+        justify-self: center;
+        margin-bottom: 15px;
+        padding: 5px;
+        border: 1px solid var(--cor3);
+        border-radius: 5px;
+    }
+    & button{
+        justify-self: center;
+        width: 60px;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: var(--cor3);
+    }
+}
