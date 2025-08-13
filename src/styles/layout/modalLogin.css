@@ -1,7 +1,7 @@
 .ModalLogin{
     position: absolute;
     border: 1px solid black;
-    display: grid;
+    display: none;
     height: 260px;
     width: 300px;
     background-color: white;
@@ -23,6 +23,10 @@
         border-radius: 50%;
         cursor: pointer;
     }
+}
+
+.ModalLogin.ativo{
+    display: grid;
 }
 
 .FormodalLogin{

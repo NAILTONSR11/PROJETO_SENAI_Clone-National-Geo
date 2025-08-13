@@ -24,7 +24,7 @@
                 <ul data-menu="list" id="menu">
                     <li><a href="#animais">animais</a></li>
                     <li><a href="#curiosidades">curiosidades</a></li>
-                    <li data-dropMenu="menuDrop">
+                    <li  data-dropMenu="menuDrop">
                         <a href="#">sobre</a>
                         <ul class="drop-down-menu">
                             <li><a href="">Empresa</a></li>
@@ -34,8 +34,8 @@
                         </ul>
                     </li>
                     <li><a href="#contatos">contato</a></li>
-                    <li><a href="#">login ⇨</a>
-                        <div class="ModalLogin"> <img src="src/assets/images/marca-x.png" alt="">
+                    <li data-modal="abrirModal" class="drop-down-login"><a href="#">login ⇨</a>
+                        <div data-modal="containerModal" class="ModalLogin"> <img data-modal="fecharModal" class="btn_close" src="src/assets/images/marca-x.png" alt="">
                             <h2>Faça Login</h2>
                             <form class="FormodalLogin" action="">
                                 <label for="">Email</label>
@@ -231,5 +231,7 @@
         <!-- Fim rodapé -->
 
     </div>
+
+
 </body>
 </html>
