@@ -1,7 +1,7 @@
 export default function initModal(){
-    const abrirModal = document.querySelector('[data-modal="abrirModal"]')
-    const modal = document.querySelector('[data-modal="containerModal"]')
-    const fecharModal = document.querySelector('[data-modal="fecharModal"]')
+    const abrirModal = document.querySelector('[data-modal="abrirModal"]');
+    const modal = document.querySelector('[data-modal="containerModal"]');
+    const fecharModal = document.querySelector('[data-modal="fecharModal"]');
 
     abrirModal.addEventListener('click', abrir);
     fecharModal.addEventListener('click', fechar);
@@ -15,9 +15,9 @@ export default function initModal(){
         modal.classList.remove('ativo');
     }
 
-    function fecharFora(e){
-        if(e.target === this){
-            fechar(e);
+    function fecharFora(event){
+        if(event.target === this){
+            fechar(event)
         }
     }
 }
