@@ -9,7 +9,7 @@ export default function initSlide(){
     nextBtn.addEventListener('click', () => mudarSlide(1));
 
     function updateSlide(){
-        slides.style.transform = `translateX(-${mudarSlide * 100})`;
+        slides.style.transform = `translateX(-${slideAtivo * 100}%)`;
         dots.forEach((itemDot, indice)=>{
             itemDot.classList.toggle('ativo', indice === slideAtivo);
         })
@@ -21,5 +21,12 @@ export default function initSlide(){
         slideAtivo = (slideAtivo + direction + total) % total;
         updateSlide();
     }
+
+    setInterval(()=>{
+        const total = document.querySelectorAll('[data-slides="slides"] div').length; //pega todas as divs
+        // Lógica do cálculo de uma variável acumuladora
+        slideAtivo = (slideAtivo + 1 +total) % total;
+        updateSlide();
+    }, 2000)
 
 }
